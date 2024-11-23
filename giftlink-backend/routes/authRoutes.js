@@ -37,6 +37,7 @@ router.post('/register', async (req, res) => {
             },
         };
 
+        
         const authtoken = jwt.sign(payload, JWT_SECRET);
     }
     catch(e){
