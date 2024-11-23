@@ -1,6 +1,7 @@
 const express = require('express');
 const { ObjectId } = require('mongodb');
 const router = express.Router();
+const connectToDatabase = require('../models/db');
 
 // GET all gifts
 router.get('/', async (req, res) => {
